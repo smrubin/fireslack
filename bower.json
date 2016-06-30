@@ -2,9 +2,9 @@
   "name": "angularfire-slack",
   "version": "0.0.0",
   "dependencies": {
-    "angular": "^1.3.0",
+    "angular": "^1.5.5",
     "bootstrap": "3.3.4",
-    "angularfire": "~1.1.0",
+    "angularfire": "^2.0.1",
     "angular-ui-router": "~0.2.14",
     "angular-md5": "~0.1.7"
   },
@@ -12,5 +12,9 @@
     "angular-mocks": "^1.3.0"
   },
   "appPath": "app",
-  "moduleName": "angularfireSlackApp"
+  "moduleName": "angularfireSlackApp",
+  "resolutions": {
+    "firebase": "3.x.x",
+    "angularfire": "^2.0.0"
+  }
 }

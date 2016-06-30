@@ -23,17 +23,6 @@
     <ui-view></ui-view>
 
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-       }(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script>
-
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -46,8 +35,31 @@
     <!-- endbower -->
     <!-- endbuild -->
 
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAREqeNTNC4dT9mXgZTLjyMjDfrl9WebJc",
+        authDomain: "slack-clone-2516f.firebaseapp.com",
+        databaseURL: "https://slack-clone-2516f.firebaseio.com",
+        storageBucket: "slack-clone-2516f.appspot.com",
+      };
+      firebase.initializeApp(config);
+    </script>
+
+
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="app.js"></script>
+    <script src="route-config.js"></script>
+    <script src="auth/auth.service.js"></script>
+    <script src="auth/AuthCtrl.js"></script>
+    <script src="users/users.service.js"></script>
+    <script src="users/ProfileCtrl.js"></script>
+    <script src="channels/channels.service.js"></script>
+    <script src="channels/channels.controller.js"></script>
+    <script src="messages/messages.service.js"></script>
+    <script src="messages/messages.controller.js"></script>
     <!-- endbuild -->
+
 </body>
+
 </html>

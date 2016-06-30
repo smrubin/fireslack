@@ -29,7 +29,7 @@ body {
   height:100%;
   background:#4d394b;
   position:relative;
-  overflow-y:scroll;
+  /*overflow-y:scroll;*/
   padding-bottom:100px;
 }
 
